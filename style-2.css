@@ -1,0 +1,163 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+.cf:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+html {
+	font-weight: 100;
+	letter-spacing: .5em;
+	color: #777;
+}
+
+#container {
+	background-color: #ddd;
+	margin: 5em;
+}
+
+h1 {
+	text-align: center;
+	margin: 1em auto 0 auto;
+	padding: .5em 0 0 0;
+	color: #fff;
+
+}
+
+#fields {
+	/*margin: 0 auto;*/
+	padding: .5em 10% 5% 10%;
+	/*width: 75%;*/
+}
+
+.bg {
+	background-color: #fff;
+}
+
+#input {
+	display: inline-block;
+	margin: 0 auto;
+	padding: .5em 0 0 0;
+	width: 100%;
+}
+
+input {
+	display: inline-block;
+	float: left;
+	border: none;
+	color: #ccc;
+	font-style: italic;
+	padding: .5em;
+	height: 2em;
+	width: 85%
+}
+
+#submit {
+	background-color: #fff;
+	display: inline-block;
+	float: left;
+	color: #c2cf8e;
+	letter-spacing: .25em;
+	border: none;
+	height: 2em;
+	width: 15%;
+}
+
+#views {
+	/*width: 34em;*/
+	padding: 0;
+}
+
+.view {
+	margin: 0;
+	float: left;
+	width: 33.33%;
+}
+
+.view button {
+	color: #ccc;
+	border: none;
+	background-color: #fff;
+	font-size: .75em;
+	letter-spacing: .25em;
+	display: block;
+	height: 2em;
+	width: 100%;
+}
+
+.view:nth-of-type(2) {
+	padding: 0;
+}
+
+.task-list {
+	background-color: #fff;
+	/*width: 34em;*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.task-list li {
+	padding: 0 .5em 0 0;
+	line-height: 2em;
+}
+
+.check {
+	display: inline-block;
+	float: left;
+	vertical-align: middle;
+	border: none;
+	padding: 0;
+	margin: .625em;
+	background-color: #c2cf8e;
+	border-radius: 100%;
+	width: .75em;
+	height: .75em;
+
+}
+
+.task-list p {
+	margin: 0;
+	display: inline-block;
+	/*vertical-align: top;*/
+}
+
+.remove {
+	display: inline-block;
+	float: right;
+	color: red;
+	border: none;
+	background-color: transparent;
+	/*vertical-align: top;*/
+	padding: 0 4px;
+}
+
+.showing > button {
+    background-color: #ddd;
+    color: #fff;
+}
+
+/*list classes*/
+.task-list.incomplete > li.complete {
+	display: none;
+}
+
+.task-list.complete > li:not(.complete) {
+	display: none;
+}
+
+.complete {
+	background-color: #c2cf8e;
+	color: #fff;
+}
+
+.complete button {
+	color: #fff;
+}
+
+.complete .check {
+	background-color: #fff;
+}

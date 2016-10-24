@@ -1,0 +1,143 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+.cf:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+#container {
+	background-color: #aaa;
+	margin: 5em;
+}
+
+h1 {
+	text-align: center;
+	margin: 1em auto 0 auto;
+	padding: .5em 0 0 0;
+
+}
+
+#fields {
+	margin: 0 auto;
+	padding: 1em 10%;
+	/*width: 75%;*/
+}
+
+#input {
+	display: inline-block;
+	margin: 0 auto;
+	padding: .5em 0;
+	width: 100%;
+}
+
+input {
+	display: inline-block;
+	float: left;
+	border: none;
+	color: #777;
+	font-style: italic;
+	padding: .5em;
+	height: 2em;
+	width: 85%
+}
+
+#submit {
+	background-color: #000;
+	display: inline-block;
+	float: left;
+	color: #fff;
+	border: none;
+	height: 2em;
+	width: 15%;
+}
+
+#views {
+	/*width: 34em;*/
+	padding: .5em 0;
+}
+
+.view {
+	margin: 0;
+	float: left;
+	width: 33.33%;
+}
+
+.view button {
+	color: #fff;
+	border: none;
+	background-color: #000;
+	display: block;
+	height: 2em;
+	width: 100%;
+}
+
+.view:nth-of-type(2) {
+	padding: 0 .5em;
+}
+
+.task-list {
+	background-color: #fff;
+	/*width: 34em;*/
+	list-style-type: none;
+	padding: 0;
+}
+
+.task-list li {
+	padding: 0 .5em 0 0;
+	line-height: 2em;
+}
+
+.check {
+	display: inline-block;
+	float: left;
+	vertical-align: middle;
+	border: none;
+	padding: 0;
+	margin: .625em;
+	background-color: green;
+	border-radius: 100%;
+	width: .75em;
+	height: .75em;
+
+}
+
+.task-list p {
+	margin: 0;
+	display: inline-block;
+	/*vertical-align: top;*/
+}
+
+.remove {
+	display: inline-block;
+	float: right;
+	color: red;
+	border: none;
+	background-color: transparent;
+	/*vertical-align: top;*/
+	padding: 0 4px;
+}
+
+
+/*list classes*/
+.visible {
+
+}
+
+.complete {
+	background-color: green;
+	color: #fff;
+}
+
+.complete button {
+	color: #fff;
+}
+
+.complete .check {
+	background-color: #fff;
+}
+
+
+
